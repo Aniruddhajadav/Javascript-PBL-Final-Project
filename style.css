@@ -1,0 +1,348 @@
+html {
+    display: block;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter Var", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+head {
+    display: none;
+}
+body {
+    display: block;
+}
+aside {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+aside#sidebarHeader.start {
+    --theme-element-divider: rgba(138, 147, 153, 0.25);
+    --theme-element-background: #41495a;
+    color: #41495a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1), 0 17px 24px rgba(0, 0, 0, 0.7);
+    z-index: 2000000000;
+    font-family: "Inter Var", sans-serif;
+    transform: translate(0);
+    width: 349.99px;
+}
+div#ignheader.start {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+
+div.sidebar-header {
+    height: 45.5px;
+    padding: 34.500px 24px 0px 24px;
+}
+div.logo-edition {
+    width: 252px;
+    height: 28px;
+}
+a#headerlogo {
+    text-decoration: none;
+}
+svg.ign-logo {
+    background-size: 100%;
+    cursor: inherit;
+    user-select: none;
+    display: inline-block;
+    flex-shrink: 0;
+    aspect-ratio: 182 / 55;
+    font-size: 1.5rem;
+    width: 5rem;
+    color: #bf1313;
+    fill: #bf1313;
+}
+div.logodate {
+    font-size: 16px;
+    font-weight: 700;
+    max-width: 280px;
+    display: inline-block;
+    vertical-align: super;
+    align-self: center;
+}
+
+.sidebar-main {
+    overflow: hidden auto;
+    scroll-behavior: smooth;
+    flex: 1 1 0%;
+    padding: 18px 24px;
+}
+.side-container .sidebar-section {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+.side-container .sidebar-section>li.selected {
+    font-weight: 700;
+}
+.side-container .sidebar-section>li.selected, .side-container .sidebar-section>li:hover {
+    background-color: #8a939940;
+    color: #41495a;
+    border: 0;
+}
+.side-container .sidebar-section li {
+    gap: 18px;
+    font-size: 16px;
+}
+.side-container .sidebar-section a, .side-container .sidebar-section li {
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.side-container {
+    overflow-y: scroll;
+}
+li {
+    unicode-bidi: isolate;
+}
+
+.side-container .sidebar-section a {
+    display: -webkit-flex;
+    -webkit-algin-items: center;
+    gap: 12px;
+    color: #41495a;
+    fill: #41495a;
+    transition: padding .1s linear 0s;
+    min-height: 39px;
+}
+a {
+    text-decoration: none;
+}
+a :-webkit-any-link {
+    color: -webkit-any-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sidebar-section .selected a.icon-home:before {
+    content: url(https://in.ign.com/s/ign/sidebar/home-selected.svg);
+    padding-left: 16px;
+}
+/* .sidebar-section .selected a.icon-home:before {
+    content: url(https://in.ign.com/s/ign/sidebar/home.svg);
+    padding-left: 1px;
+} */
+.sidebar-section a svg, .sidebar-section a:before {
+    width: 1.2em;
+    height: 1.2em;
+}
+.sidebar-icon, .sidebar-section a svg, .sidebar-section a:before {
+    background-size: 100%;
+    cursor: inherit;
+    user-select: none;
+    aspect-ratio: 1 / 1;
+    display: inline-block;
+    flex-shrink: 0;
+}
+a.icon-home span {
+    font-size: 16px;
+    font-weight: 700;
+}
+a.iconsvg svg {
+    padding-left: 16px; 
+}
+a.iconsvg span {
+    font-size: 16px;
+}
+
+aside#sidebarHeader .icon-right-chevron {
+    width: 16px;
+    margin-left: auto;
+}
+
+.sidebar-main .divider {
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid rgba(138, 147, 153, 0.25);
+}
+
+.search-modal {
+    margin-top: 2px;
+    width: 100%;
+}
+form {
+    display: block;
+    unicode-bidi: isolate;
+}
+.indexFilter .filterlist svg, .search-modal .button, footer {
+    display: none;
+}
+.button-primary {
+    background-color: #bf1313;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    white-space: nowrap;
+    padding: 8px 20px;
+    border: 0;
+}
+button {
+    appearance: auto;
+    text-rendering: auto;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    margin: 0em 0em 0em 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+}
+aside#sidebarHeader #search-input {
+    display: block;
+    padding: 8px;
+    width: 90%;
+    border: 1px solid #181c25;
+    outline: 0;
+    font-size: 14px;
+    border-radius: 8px;
+    color: #181c25;
+    max-width: 90%;
+}
+input {
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em 0em 0em 0em;
+}
+input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]) {
+    overflow-clip-margin: 0px !important;
+    overflow: clip !important;
+}
+input[type="text" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+#loginwrapper, .region {
+    padding: 18px 24px;
+}
+#loginwrapper {
+    position: relative;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .1), 0 17px 24px rgba(0, 0, 0, .07);
+    height: 76px;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: auto;
+}
+#loginwrapper, .side {
+    width: 100%;
+    display: flex;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+#loginwrapper .login-buttons {
+    display: flex;
+    opacity: 1;
+    transition: opacity 450ms cubic-bezier(.34, -.09, .45, 1.18);
+    flex: 1;
+    flex-direction: row;
+    gap: 12px;
+    /* justify-content: center; */
+    text-decoration: none;
+}
+
+#loginwrapper img.userIcon {
+    height: 36px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.sidebar-icon {
+    width: 1em;
+    height: 1em;
+    font-size: 1rem;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+g {
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.login-buttons {
+    width: 390px
+}
+.login-buttons .login-button {
+    background-color: #fff;
+    border: 1px solid #bbc4c4;
+    color: #181c25;
+    font-size: 20px;
+}
+.login-buttons .button {
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color .2s ease 0s, background .15s ease 0s, border .15s ease 0s;
+    max-width: 120px;
+    font-size: 1rem;
+    letter-spacing: .005em;
+    font-weight: 700;
+    line-height: 1.5;
+    border-radius: 8px;
+    padding: 6px 12px;
+    flex-grow: 1;
+    text-align: center;
+}
+.login-buttons .register-button {
+    color: #fff;
+    border: 1px solid #181c25;
+    background-color: #181c25;
+}
+
+#loginwrapper {
+    width: 302.01px;
+}
