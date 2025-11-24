@@ -73,7 +73,7 @@ body {
 }
 
 /* --- 2. Main App Layout (Refactored) --- */
-#main-app, #auth-container { width: 100%; max-width: 896px; }
+#main-app, #auth-container { width: 100%; max-width: 900px; }
 header { margin-bottom: 1.5rem; text-align: center; }
 header h1 {
     font-size: 2.25rem; font-weight: 700;
